@@ -1,6 +1,5 @@
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Stars } from '@react-three/drei'
-import React from 'react'
 import { motion } from 'framer-motion'
 
 const Hero = () => {

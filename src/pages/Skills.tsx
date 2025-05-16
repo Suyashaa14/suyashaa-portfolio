@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import React from 'react'
 
 const skills = {
   'Languages & Styling': ['JavaScript (ES6+)', 'TypeScript', 'HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap'],
