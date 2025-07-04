@@ -1,5 +1,5 @@
-// === src/components/Navbar.tsx ===
-import React, { useState } from 'react'
+
+import  { useState } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin, FaSun, FaMoon } from 'react-icons/fa'
 import { useTheme } from '../context/ThemeContext'
 

@@ -1,7 +1,6 @@
 // === src/pages/Projects.tsx ===
 import { motion } from 'framer-motion'
-import React from 'react'
-import { FaCode, FaShoppingCart, FaVideo, FaGraduationCap, FaMapMarkedAlt, FaChartLine } from 'react-icons/fa'
+import { FaShoppingCart, FaVideo, FaGraduationCap, FaMapMarkedAlt, FaChartLine } from 'react-icons/fa'
 import { SectionTitle } from '../components/SectionTitle '
 
 const projects = [

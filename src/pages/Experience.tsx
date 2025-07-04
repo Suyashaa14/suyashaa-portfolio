@@ -1,6 +1,5 @@
-// === src/pages/Experience.tsx ===
-import React from 'react'
-import { FaUniversity, FaBriefcase, FaGraduationCap, FaLaptopCode } from 'react-icons/fa'
+
+import {  FaBriefcase, FaGraduationCap, FaLaptopCode } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import { SectionTitle } from '../components/SectionTitle '
 

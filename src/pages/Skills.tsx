@@ -1,6 +1,5 @@
-// === src/pages/Skills.tsx ===
+
 import { motion } from 'framer-motion'
-import React from 'react'
 import { FaCode, FaCogs, FaProjectDiagram, FaUserFriends } from 'react-icons/fa'
 import { SectionTitle } from '../components/SectionTitle '
 
