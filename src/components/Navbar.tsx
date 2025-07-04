@@ -1,11 +1,10 @@
-
-import  { useState } from 'react'
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaSun, FaMoon } from 'react-icons/fa'
-import { useTheme } from '../context/ThemeContext'
+import { useState } from 'react'
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
+// import { useTheme } from '../context/ThemeContext' // Theme disabled
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const { theme, toggleTheme } = useTheme()
+  // const { theme, toggleTheme } = useTheme() // Theme disabled
 
   const toggleMenu = () => setIsOpen(!isOpen)
   const closeMenu = () => setIsOpen(false)
@@ -13,7 +12,7 @@ const Navbar = () => {
   const links = ['About', 'Skills', 'Projects', 'Experience', 'Contact']
 
   return (
-    <nav className="bg-gray-900 dark:bg-white text-white dark:text-gray-900 fixed w-full z-50 shadow-lg transition-colors duration-300">
+    <nav className="bg-gray-900 text-white fixed w-full z-50 shadow-lg transition-colors duration-300">
       <div className="flex justify-between items-center px-6 py-4 max-w-6xl mx-auto">
         <a href="#hero" className="text-xl font-bold hover:text-blue-400 transition text-inherit">
           Suyashaa.dev
@@ -50,6 +49,7 @@ const Navbar = () => {
             >
               <FaLinkedin />
             </a>
+            {/* Theme toggle removed */}
             {/* <button
               onClick={toggleTheme}
               aria-label="Toggle Theme"
@@ -71,7 +71,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-6 py-6 space-y-6 animate-fade-in shadow-lg transition-colors duration-300">
+        <div className="md:hidden bg-gray-900 text-white px-6 py-6 space-y-6 animate-fade-in shadow-lg transition-colors duration-300">
           <ul className="flex flex-col items-center space-y-4">
             {links.map(link => (
               <li key={link}>
@@ -102,13 +102,14 @@ const Navbar = () => {
             >
               <FaLinkedin />
             </a>
-            <button
+            {/* Theme toggle removed for mobile */}
+            {/* <button
               onClick={toggleTheme}
               aria-label="Toggle Theme"
               className="hover:text-blue-400 text-inherit"
             >
               {theme === 'dark' ? <FaSun /> : <FaMoon />}
-            </button>
+            </button> */}
           </div>
         </div>
       )}
