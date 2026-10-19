@@ -10,6 +10,8 @@ export const ME = {
   github: 'github.com/suyashaa14',
   linkedin: 'linkedin.com/in/suyashaa-vaidya',
   email: 'suyashaa123@gmail.com',
+  githubUrl: 'https://github.com/suyashaa14',
+  linkedinUrl: 'https://www.linkedin.com/in/suyashaa-vaidya-469779250/',
   business: 'Lunera Online Business Pvt. Ltd.',
   businessSite: 'https://luneraonlinestore.com/',
   cv: '/Suyashaa_Vaidya_CV.pdf',

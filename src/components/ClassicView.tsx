@@ -1,3 +1,4 @@
+import ContactLinks from './ContactLinks'
 import { ME, PROJECTS, SKILLS } from '../data/content'
 
 export default function ClassicView({ on, onClose }: { on: boolean; onClose: () => void }) {
@@ -65,14 +66,7 @@ export default function ClassicView({ on, onClose }: { on: boolean; onClose: () 
         </section>
         <section>
           <h2>Contact</h2>
-          <div className="links">
-            <span>{ME.email}</span>
-            <span>{ME.github}</span>
-            <span>{ME.linkedin}</span>
-            <a href={ME.businessSite} target="_blank" rel="noreferrer">
-              luneraonlinestore.com
-            </a>
-          </div>
+          <ContactLinks />
         </section>
       </div>
     </div>
